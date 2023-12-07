@@ -1,3 +1,14 @@
 p, h1, h2 {
     font-family: 'Inconsolata', monospace; 
 }
+.row {
+    display: flex;
+    overflow: visible;
+  }
+  .sidetext{
+    text-align: l;
+}
+.biolink{
+    background-color: #5769f2;
+            padding: 15px;
+}
