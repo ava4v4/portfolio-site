@@ -1,6 +1,7 @@
 p, h1, h2 {
     font-family: 'Inconsolata', monospace; 
 }
+
 .row {
     display: flex;
     overflow: visible;
@@ -8,7 +9,47 @@ p, h1, h2 {
   .sidetext{
     text-align: l;
 }
-.biolink{
-    background-color: #5769f2;
-            padding: 15px;
-}
+
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #2190ff;
+    color: rgb(255, 255, 255);
+  }
+
+  .topnav a.active {
+    background-color: #2190ff;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }

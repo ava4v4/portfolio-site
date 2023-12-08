@@ -7,7 +7,8 @@ let d = 10;
 let count = 100; 
 
 function setup() {
-  createCanvas(windowWidth, 55);
+  var canvas = createCanvas(windowWidth, 55);
+  canvas.parent("dots");
   x = width/4;
   y = height/8;
   w = width + 16;
