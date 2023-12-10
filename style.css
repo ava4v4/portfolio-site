@@ -22,6 +22,7 @@ p, h1, h2 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    color: rgb(255, 255, 255);
   }
 
   .topnav a:hover {
@@ -53,3 +54,29 @@ p, h1, h2 {
     margin-top: 8px;
     vertical-align: middle;
   }
+.works img {
+  width: auto;
+  max-height: 700px;
+}
+
+.works {
+  flex: 75%;
+  height: 80vh;
+}
+
+.content {
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+  padding: 25px;
+}
+
+.image {
+  display: block;
+  width: 66%; 
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
