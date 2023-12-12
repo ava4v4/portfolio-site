@@ -1,6 +1,6 @@
 let x, y; 
-let xspeed = 7;
-let yspeed = 7; 
+let xspeed = 50;
+let yspeed = 16; 
 let xdirection = 1; 
 let ydirection = 1; 
 let d = 10; 
@@ -10,8 +10,8 @@ function setup() {
   var canvas = createCanvas(windowWidth, 55);
   canvas.parent("dots");
   x = width/4;
-  y = height/8;
-  w = width + 16;
+  y = height/4;
+  w = width + 20;
   dx = (TWO_PI / period) * xspacing;
   yvalues = new Array(floor(w / xspacing));
   clear();
@@ -43,11 +43,11 @@ function draw() {
 }
 
 
-let xspacing = 16; // Distance between each horizontal location
+let xspacing = 34; // Distance between each horizontal location
 let w; // Width of entire wave
-let theta = 0.0; // Start angle at 0
-let amplitude = 10.0; // Height of wave
-let period = 500.0; // How many pixels before the wave repeats
+let theta = 0.5; // Start angle at 0
+let amplitude = 16.0; // Height of wave
+let period = 50.0; // How many pixels before the wave repeats
 let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
 let colorUp=true;
@@ -56,7 +56,7 @@ let colorUp=true;
 function calcWave() {
   // Increment theta (try different values for
   // 'angular velocity' here)
-  theta += 0.04;
+  theta += 0.02;
 
   // For every x value, calculate a y value with sine function
   let x = theta;
@@ -68,7 +68,7 @@ function calcWave() {
 
 function renderWave() {
   noStroke();
-    if (count == 300 && colorUp){
+    if (count == 275 && colorUp){
       colorUp=false;
     } 
     if (count == 0 && !colorUp){
@@ -79,7 +79,7 @@ function renderWave() {
     } else {
         count-=1;
     }
-  fill(count, count + 100, count + 300);
+  fill(count + 0, count + 0, count + 0);
   // A simple way to draw the wave with an ellipse at each location
   for (let x = 0; x < yvalues.length; x++) {
     ellipse(x * xspacing, height / 2 + yvalues[x], 16, 16);

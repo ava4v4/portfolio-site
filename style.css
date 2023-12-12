@@ -63,7 +63,16 @@ p, h1, h2 {
   .works img {
     width: 80% !important;
   }
+
+.title img {
+  min-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0% !important;
 }
+
+}
+
 
 .works {
   flex: 75%;
@@ -85,4 +94,8 @@ p, h1, h2 {
   height: auto;
   margin-right: auto;
   margin-left: auto;
+}
+
+.dots {
+  size: 30px;
 }
