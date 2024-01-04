@@ -1,4 +1,4 @@
-p, h1, h2 {
+p, h1, h2, .cv, .topnav {
     font-family: 'Inconsolata', monospace; 
 }
 
@@ -10,8 +10,23 @@ p, h1, h2 {
     text-align: l;
 }
 
+@media only screen and (max-width:1000px) {
+  .biobox {
+    width: 100% !important;
+
+ 
+  }
+
+.biobox{
+  text-align: center;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}}
+
+
 .topnav {
-    background-color: #000000;
+    background-color: #f5b0b0;
     overflow: hidden;
   }
 
@@ -26,14 +41,10 @@ p, h1, h2 {
   }
 
   .topnav a:hover {
-    background-color: #2190ff;
+    background-color: #fff421;
     color: rgb(255, 255, 255);
   }
 
-  .topnav a.active {
-    background-color: #2190ff;
-    color: white;
-  }
 
   .topnav .icon {
     display: none;
@@ -56,7 +67,7 @@ p, h1, h2 {
   }
 .works img {
   width: auto;
-  max-height: 700px;
+  max-height: 1000px;
 }
 
 @media only screen and (max-width:1000px) {
@@ -65,7 +76,7 @@ p, h1, h2 {
   }
 
 .title img {
-  min-width: 200px;
+  min-width: 375px;
   margin-right: auto;
   margin-left: auto;
   padding: 0% !important;
@@ -76,7 +87,7 @@ p, h1, h2 {
 
 .works {
   flex: 75%;
-  height: 80vh;
+  height: 100vh;
 }
 
 .content {
@@ -96,6 +107,13 @@ p, h1, h2 {
   margin-left: auto;
 }
 
-.dots {
-  size: 30px;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
+
+.sticky + .content {
+  padding-top: 60px;
+}
+

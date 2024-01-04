@@ -12,18 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inconsolata:wght@200;300;400;700;900&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="a_icon.png">
+    
 
 
-    <title>BIO</title>
+    <title>cv / bio</title>
     <style>
           @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inconsolata:wght@200;300;400;700;900&display=swap');
 
 
 p {
-    font-weight: 400;
-    padding: 40px;
+    font-weight: 440;
+    padding: 100px;
     
 }
+
 
 body {
     margin: 0px;
@@ -64,63 +66,67 @@ img {
 }
 
 .cv a {
-    color:pink !important;
+    color:rgb(208, 135, 148) !important;
 }
-
 
     </style>
 
-<script src="p5.js"></script>
-<script src="sketch.js"></script>
 </head>
 <body>
 <main>
-         <img id="avatitle"
-          src= avatitle.png>
-          <div id="dots">
-          </div>
+
           <div class="topnav">
-            <a  href="index.html">home</a>
-            <a class="active" href="bio.html"> >bio & cv< </a>
-            <a href="about.html">  >about<  </a>
-            <a href="sketchbook.html"> >sketchbook< </a>
+            <a class="active" href="index.html">home</a>
+            <a href="bio.html"> cv / bio </a>
+            <a href="works.html"> work </a>
           </div>
-    
+
   </main>
 </head>
 <body>
-    <p>Ava Wadley is a visual artist from Austin, Texas who works with a myriad of mediums along with
-        different digital processes and artifacts. Her work centers around
-        technology and how what is synthetic can sometimes mesh together with what is natural. Her
-        work also deals with the trans experience and communication. She works with digital text,
-        fragmented poetry, and typed images brought together to ask questions about language and
-        images. She has learned to code independently to further explore the relationship between art
-        and programming. She enjoys building personal archives of online media including photos,
-        digital video, and websites. She is involved with the DIY music scene in Austin, Texas, and
-        performs as a DJ under the name "salon". She is equally as drawn to music as she is visual art
-        and seeks to explore the music scene further. Ava is currently in the process of completing her
-        Bachelor’s in Fine Arts at Texas State University.
+    <div class="biobox">
+    <p> I am an artist based out of Austin, TX. I work with different mediums along with a myriad of 
+        digital processes to create work that explores hidden patterns and their behavior. I explore patterns 
+        that not only manifest visually but also through psychologial means. There are patterns in identity, thoughts, language, 
+        and everything that we interact with. I find that a central idea tends to reveal itself subconsciously when I am working on a project. 
+        Place, memory, the past, and language are subjects that frequently come up in my work. 
+
         </p>
+        </div>
 
         <div class="cv">
-            <p>email: avawadley122@gmail.com<br>
+            <p>email: <u>avawadley122@gmail.com</u><br>
                 instagram: @ava_ilabilities<br><br>
                 <h2>Education</h2>
                 2024 Texas State University BFA, San Marcos, Texas<br><br>
                 <h2>Exhibitions</h2>
                 <i>esc.alt.space</i>,<a href="https://esc-alt-space.com/" > online exhibition</a><br>
-                2023<br>
+                Dec. 2023 <br>
 
                 <h2>Professional Experience</h2><br>
-                <i>Shared Frequencies Radio guest set,</i> October 2023:<a href="https://soundcloud.com/sharedfrequenciesradio/shared-frequencies2?si=f28cf65f227048b281bebc2ed2f1d672&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
-                    soundcloud link</a><br><br>
-                   <i>A Madsummer's Day's Dream,</i> September 2023<br>
-                    Sound assistant, DJ<br><br>
+                <i> <a href="https://sharedfrequencies.live/"> Shared Frequencies Radio</a></i>, Jan. 2024 - current <br>
+                Resident DJ
+                <br><br>
+                
                     <i>Holland Photo,</i> 2022 - current<br>
-                    Framing Department
+                    Head of Framing Department 
 
                 </p>
         </div>
 
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var topnav = document.getElementByClass("topnav");
+            var sticky = topnav.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                topnav.classList.add("sticky")
+              } else {
+                topnav.classList.remove("sticky");
+              }
+            }
+            </script>
 </body>
 </html>
