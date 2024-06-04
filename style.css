@@ -29,6 +29,10 @@ p, h1, h2, .cv, .topnav {
 .topnav {
     background:linear-gradient(to right, #9ed5ff, #7fdaeb, #ffffff);
     overflow: hidden;
+    display: flex;
+    padding: 8px;
+    top:0; left:0; right:0
+
   }
 
   .topnav a {
@@ -37,7 +41,7 @@ p, h1, h2, .cv, .topnav {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(255, 255, 255);
   }
 
@@ -70,13 +74,6 @@ p, h1, h2, .cv, .topnav {
   padding: 25px;
 }
 
-.image {
-  display: block;
-  width: 66%; 
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .sticky {
   position: fixed;
@@ -84,7 +81,7 @@ p, h1, h2, .cv, .topnav {
   width: 100%;
 }
 
-.sticky + .content {
+/* .sticky + .content {
   padding-top: 60px;
-}
+} */
 
