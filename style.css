@@ -10,16 +10,24 @@ p, h1, h2, .cv, .topnav {
     text-align: l;
 }
 
+body {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @media only screen and (max-width:1000px) { 
   .biobox {
-    width: 100% !important;
+    width: 120% !important;
+    text-align: left !important;
 
  
   }
 
 .biobox{
   text-align: center;
-  width: 900px;
+  width: 100px;
   margin-left: auto;
   margin-right: auto;
 }}
@@ -36,7 +44,6 @@ p, h1, h2, .cv, .topnav {
   }
 
   .topnav a {
-    float: left;
     color: #000000;
     text-align: center;
     padding: 14px 16px;
